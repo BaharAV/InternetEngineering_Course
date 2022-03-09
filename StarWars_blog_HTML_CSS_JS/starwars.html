@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  <!--    defining character encoding for the document-->
+    <title>StarWars</title> <!--    defining title-->
+    <link rel="stylesheet" href="starwars.css"> <!--    defining css file-->
+    <script src="starwars.js"></script> <!--    defining js file-->
+</head>
+<body>
+<!--this div is used to show the page number and links to navigate between them-->
+<div id="pagediv">
+    <a href="javascript:prevPage()" id="btn_prev">Prev</a>
+    <span id="page"></span>
+    <a href="javascript:nextPage()" id="btn_next">Next</a>
+</div>
+<!--this div is the used as the rectangle box which contains the content-->
+<div class="maindiv">
+<!--    this div is on the left side of the rectangle box and will contain the list of starships in each page-->
+<!--    list of starships will be added to it on js file-->
+    <div class="splitdivs" id="leftdiv">
+        <div class="centered">
+            <h1 id="starshipstitle">Starships</h1>
+            <ul id="starshipslist"> <!--unoredered list to place the starships-->
+            </ul>
+        </div>
+    </div>
+<!--    this div is on the right side of the rectangle box-->
+<!--    this box is empty when we first see each page, and when someone clicks on a starship, It's detail will be shown here-->
+<!--    details will be added here on js file-->
+    <div class="splitdivs" id="rightdiv">
+        <div class="centered">
+            <h1 id="title"></h1> <!--name of the selected starship will also be shown here-->
+            <ul id="details"> <!--unoredered list to place the details-->
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

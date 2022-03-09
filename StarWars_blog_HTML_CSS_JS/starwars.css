@@ -1,0 +1,70 @@
+/*this block is used to place a background image for the body*/
+body {
+    background-image: url("background.jpg"); /*to define the backgroind image*/
+    background-repeat: no-repeat; /*not to let the image be repeated several times if it was small*/
+    background-position: center; /*to zoom in center when the screen becomes small*/
+    background-attachment: fixed; /*not to let scrolling happen when image is big*/
+    background-size: cover; /*to let the image fully cover the background*/
+}
+
+/*this block is used to place the div which containes page number and navigating links in the center of the page
+and at the top of the next div(the rectangle box)*/
+#pagediv {
+    position: relative;
+    margin: auto;
+    top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/*
+this block is used to place the the rectangle box which containes the main content in the center of the page horizontally
+with a selected distance from the top of the page and a selected padding.
+width and height are defined related to the content size.
+the rectangle box is divided into two divs and here we make them stand in a line.
+border and backgrond color with transparency is also defined for the rectangle box.
+*/
+.maindiv {
+    padding: 20px;
+
+    position: relative;
+    margin: auto;
+    top: 100px;
+
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    border-style: solid; /*border is a sloid line*/
+    border-width: 2px; /*border width is 2px*/
+    border-color: deeppink; /*border color*/
+    border-radius: 20px; /*border radius is 20px to make it seem a bit curved*/
+
+    background-color: rgba(255, 0, 0, 0.3); /*this function is used to set color for the box and make it semi transparent*/
+}
+
+/*this blocl is used to set color and margin for any links in the project (here we have the previos and next buttons)*/
+a {
+    margin: 5px;
+    color: deeppink;
+}
+
+/*this blocl is used to set margin for any spans in the project (here we have the page number)*/
+span {
+    margin: 5px;
+}
+
+/*his blocl is used to make the cursor like a hand when hovering on the starships list to show the usera that they can click on them*/
+#starshipslist {
+    cursor: pointer;
+}
+
+/*this block is used to make a margin in the right side of the two divs which contains the starships list and details list*/
+.splitdivs{
+    margin-right: 20px;
+}
