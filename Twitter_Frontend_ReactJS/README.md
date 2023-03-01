@@ -4,5 +4,7 @@ Front-end: Implemented by HTML, CSS, JS and ReactJS.
 
 Back-end: Implemented (by a teammate) using Java and Spring Framework.
 
+Check "presentation.pdf" for more information. 
+
 
 
